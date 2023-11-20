@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Mobil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        section {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .car {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Penjualan Mobil</h1>
+    </header>
+
+    <section>
+        <div class="car">
+            <img src="2089aaefa5524ed3bcd80f3973169207_678x380.jpg" alt="Mobil Pertama">
+            <h2>Mobil Pertama</h2>
+            <p>Harga: $20,000</p>
+            <p>Deskripsi: Mobil pertama sangat nyaman dan irit bahan bakar.</p>
+            <button onclick="beliMobil('Mobil Pertama', 20000)">Beli</button>
+        </div>
+
+        <div class="car">
+            <img src="Suzuki_Ignis_GX_Hero_Angle_FLIP_STARGAZE_ORANYE___BLACK1-nn.webp" alt="Mobil Kedua">
+            <h2>Mobil Kedua</h2>
+            <p>Harga: $25,000</p>
+            <p>Deskripsi: Mobil kedua dilengkapi dengan fitur keamanan terkini.</p>
+            <button onclick="beliMobil('Mobil Kedua', 25000)">Beli</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Penjualan Mobil
+    </footer>
+
+    <script>
+        function beliMobil(namaMobil, harga) {
+            alert('Anda telah membeli ' + namaMobil + ' seharga $' + harga);
+        }
+    </script>
+
+</body>
+</html>
